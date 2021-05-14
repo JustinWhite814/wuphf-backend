@@ -5,7 +5,10 @@ const Post = require('../models/PostModel');
 // Index: GET all the Posts
 router.get('/', (req, res, next) => {
   Post.find({})
-    // .populate('owner')
+    .populate('author')
+    .exec((error, authors) => {
+      if (error) return console.log('author population error')
+    })
     .then((posts) => res.json(posts))
     .catch(next);
 });
@@ -13,7 +16,10 @@ router.get('/', (req, res, next) => {
 // Show: Get a Post by ID
 router.get('/:id', (req, res, next) => {
   Post.findById(req.params.id)
-    // .populate('owner')
+    .populate('author')
+    .exec((error, author) => {
+      if (error) return console.log('author population error')
+    })
     .then((posts) => res.json(posts))
     .catch(next);
 });
@@ -32,7 +38,7 @@ router.put('/:id', (req, res, next) => {
     .catch(next);
 });
 
-// Delete: Delete a resource in the DB
+// Delete: Delete a Post in the database
 router.delete('/:id', (req, res, next) => {
   Post.findOneAndDelete({ _id: req.params.id })
     .then((post) => res.json(post))
