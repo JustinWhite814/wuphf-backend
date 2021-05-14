@@ -11,7 +11,11 @@ router.get('/', (req, res, next) => {
 
 // Show: Get a User by ID
 router.get('/:username', (req, res, next) => {
-  User.find({unsername: req.params.username})
+  User.findOne({username: req.params.username})
+    .populate('posts')
+    .exec((error, posts) => {
+      if (error) return console.log('Post population error')
+    })
     .then((user) => res.json(user))
     .catch(next);
 });
@@ -23,14 +27,14 @@ router.post('/', (req, res, next) => {
     .catch(next);
 });
 
-// Update: Edit a Post
+// Update: Update a User's information
 router.put('/:username', (req, res, next) => {
   User.findOneAndUpdate({ username: req.params.username }, req.body, { new: true })
     .then((user) => res.json(user))
     .catch(next);
 });
 
-// Delete: Delete a resource in the DB
+// Delete: Delete a User from the database
 router.delete('/:username', (req, res, next) => {
   User.findOneAndDelete({ username: req.params.username })
     .then((user) => res.json(user))
