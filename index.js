@@ -1,11 +1,15 @@
 const express = require("express");
+const methodOverride = require("method-override");
+const cors = require('cors')
 const userRouter = require("./controllers/userRouter");
 const postRouter = require("./controllers/postRouter");
-const methodOverride = require("method-override");
 const app = express();
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
+app.use(cors())
+
 const port = 4000;
 
 app.get("/", (req, res) => {
