@@ -1,25 +1,25 @@
-const mongoose = require('../db/connection');
+const mongoose = require("../db/connection");
 
 const PostSchema = new mongoose.Schema(
   {
     content: {
-      type: String, 
-      required: true
+      type: String,
+      required: true,
     },
-    author: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User", 
-      required: true
-    },
-    likes: [{
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User"
-    }],
-    thread: [String]
+    // author: {
+    //   type: mongoose.Schema.Types.ObjectId,
+    //   ref: "User",
+    //   required: true
+    // },
+    // likes: [{
+    //   type: mongoose.Schema.Types.ObjectId,
+    //   ref: "User"
+    // }],
+    thread: [String],
   },
-  {timestamp: true}
+  { timestamp: true }
 );
 
-const Post = mongoose.model('Post', PostSchema);
+const Post = mongoose.model("Post", PostSchema);
 
 module.exports = Post;
