@@ -7,8 +7,9 @@ const PostSchema = new mongoose.Schema(
       required: true,
     },
     author: {
-      type: String
-    }
+      type: String,
+      required: true,
+    },
     //   type: mongoose.Schema.Types.ObjectId,
     //   ref: "User",
     //   required: true
@@ -17,7 +18,6 @@ const PostSchema = new mongoose.Schema(
     //   type: mongoose.Schema.Types.ObjectId,
     //   ref: "User"
     // }],
-    // thread: [String],
   },
   { timestamp: true }
 );
