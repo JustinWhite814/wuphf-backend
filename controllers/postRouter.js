@@ -10,7 +10,7 @@ router.get("/", (req, res, next) => {
     //   if (error) return console.log('author population error')
     //   console.log(JSON.stringify(posts, null, "\t"))
     // })
-    .then((posts) => res.json(posts))
+    .then((result) => res.json(result))
     .catch(next);
 });
 
@@ -23,7 +23,7 @@ router.get("/:username", (req, res, next) => {
     //   if (error) return console.log('author population error')
     //   console.log(JSON.stringify(posts, null, "\t"))
     // })
-    .then((posts) => res.json(posts))
+    .then((result) => res.json(result))
     .catch(next);
 });
 
@@ -35,28 +35,28 @@ router.get("/:id", (req, res, next) => {
     //   if (error) return console.log('author population error')
     //   console.log(JSON.stringify(posts, null, "\t"))
     // })
-    .then((posts) => res.json(posts))
+    .then((result) => res.json(result))
     .catch(next);
 });
 
 // Create: Create a new post
 router.post("/", (req, res, next) => {
   Post.create(req.body)
-    .then((newPost) => res.json(newPost))
+    .then((result) => res.json(result))
     .catch(next);
 });
 
 // Update: Edit a Post
 router.put("/:id", (req, res, next) => {
   Post.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
-    .then((post) => res.json(post))
+    .then((result) => res.json(result))
     .catch(next);
 });
 
 // Delete: Delete a Post in the database
 router.delete("/:id", (req, res, next) => {
   Post.findOneAndDelete({ _id: req.params.id })
-    .then((post) => res.json(post))
+    .then((result) => res.json(result))
     .catch(next);
 });
 
