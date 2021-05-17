@@ -12,7 +12,7 @@ const UserSchema = new mongoose.Schema(
     },
     password: String, 
     profilePhoto: String, 
-    dob: Date,
+    dob: String,
     location: String,
     posts: [{
       type: mongoose.Schema.Types.ObjectId,
