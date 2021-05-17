@@ -13,6 +13,17 @@ router.get("/", (req, res, next) => {
     .catch(next);
 });
 
+// Show: Filter Posts by username
+router.get("/:username", (req, res, next) => {
+  Post.find({author: req.params.username})
+    // .populate("author")
+    // .exec((error, author) => {
+    //   if (error) return console.log("author population error");
+    // })
+    .then((posts) => res.json(posts))
+    .catch(next);
+});
+
 // Show: Get a Post by ID
 router.get("/:id", (req, res, next) => {
   Post.findById(req.params.id)
