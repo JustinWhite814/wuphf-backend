@@ -10,7 +10,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.use(cors())
 
-const port = 4000;
 
 app.get("/", (req, res) => {
   // Can also change just a sample size for the route
@@ -21,6 +20,15 @@ app.get("/", (req, res) => {
 app.use("/users/", userRouter);
 app.use("/posts/", postRouter);
 
-app.listen(port, () => {
-  console.log(`Project 3 HOSTED on port ${port}`);
+
+app.use((err, req, res, next) => {
+  const statusCode = res.statusCode || 500;
+  const message = err.message || 'Internal Server Error';
+  res.status(statusCode).send(message);
+});
+
+
+app.set('port', process.env.PORT || 4000);
+app.listen(app.get('port'), () => {
+  console.log(`Project 3 HOSTED on ${app.get('port')}`);
 });

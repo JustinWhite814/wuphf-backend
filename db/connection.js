@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
 
-mongoURI = 'mongodb://localhost/wuphf'
+const mongoURI = process.env.NODE_ENV ==='production' 
+? process.env.DB_URL
+:'mongodb://localhost/wuphf'
 
 mongoose
   .connect(mongoURI, {
