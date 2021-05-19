@@ -10,7 +10,7 @@ const PostSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    // authon: {
+    // author: {
     //   type: mongoose.Schema.Types.ObjectId,
     //   ref: "User",
     //   required: true
