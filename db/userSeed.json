@@ -1,33 +1,37 @@
 [
   {
-    "name": "Justin White",
+    "firstName": "Justin",
+    "lastName": "White",
     "username": "KingOfStaten",
     "password": "king.of(staten)",
-    "profilePhoto": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn2.vectorstock.com%2Fi%2Fthumb-large%2F23%2F81%2Fdefault-avatar-profile-icon-vector-18942381.jpg&imgrefurl=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vectors%2Fprofile-avatar-vectors&tbnid=vJK-QtCGSLib7M&vet=12ahUKEwjAstbkicjwAhVPXTABHWm8Cr8QMygGegUIARDJAQ..i&docid=eo_r6ZqDoxWp8M&w=238&h=250&q=icon%20sample%20profile%20pictures&hl=en&ved=2ahUKEwjAstbkicjwAhVPXTABHWm8Cr8QMygGegUIARDJAQ",
+    "profilePhoto": "https://randomuser.me/api/portraits/men/83.jpg",
     "dob": "07/13/1991",
     "location": "NYC"
   },
   {
-    "name": "Max Walker",
+    "firstName": "Max",
+    "lastName": "Walker",
     "username": "MaximumDude",
     "password": "!minimum1",
-    "profilePhoto": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fservinger.in%2Fuploads%2Fmedia%2F1605705195_male-avatar-png-7.png&imgrefurl=https%3A%2F%2Fservinger.in%2F&tbnid=6Xhn-RKvB8-a4M&vet=10CA8QxiAoAWoXChMI-K2xwPnH8AIVAAAAAB0AAAAAEAw..i&docid=u7b2EWsllxiwmM&w=550&h=550&itg=1&q=sample%20profile%20images&ved=0CA8QxiAoAWoXChMI-K2xwPnH8AIVAAAAAB0AAAAAEAw",
+    "profilePhoto": "https://randomuser.me/api/portraits/men/38.jpg",
     "dob": "07/08/1993",
     "location": "New Jersey"
   },
   {
-    "name": "Evan Burton",
+    "firstName": "Evan",
+    "lastName": "Burton",
     "username": "EverManBurton",
     "password": "em=burton",
-    "profilePhoto": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.mech.utah.edu%2Fwp-content%2Fuploads%2F2018%2F06%2Fgeneric_female.jpg&imgrefurl=https%3A%2F%2Fwww.mech.utah.edu%2Fdirectory%2Fstaff%2F&tbnid=z9YCL5IZCfpXGM&vet=12ahUKEwj7zO7n-sfwAhV5hoQIHa_lC8QQMyhNegQIARBY..i&docid=l3BCRmCcaSzdhM&w=500&h=500&itg=1&q=sample%20profile%20images&hl=en&ved=2ahUKEwj7zO7n-sfwAhV5hoQIHa_lC8QQMyhNegQIARBY",
+    "profilePhoto": "https://randomuser.me/api/portraits/men/77.jpg",
     "dob": "07/17/1991",
     "location": "Chicago"
   },
   {
-    "name": "Raihan Saleh",
+    "firstName": "Raihan",
+    "lastName": "Saleh",
     "username": "BrownHammer",
     "password": "blackGlasses",
-    "profilePhoto": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fst4.depositphotos.com%2F1012074%2F20946%2Fv%2F600%2Fdepositphotos_209469984-stock-illustration-flat-isolated-vector-illustration-icon.jpg&imgrefurl=https%3A%2F%2Fdepositphotos.com%2Fvector-images%2Fgeneric-profile-image.html&tbnid=rYM4t1KvwRwHhM&vet=12ahUKEwj7zO7n-sfwAhV5hoQIHa_lC8QQMygregUIARDvAQ..i&docid=D8AD4jb-ysfxGM&w=600&h=600&itg=1&q=sample%20profile%20images&hl=en&ved=2ahUKEwj7zO7n-sfwAhV5hoQIHa_lC8QQMygregUIARDvAQ",
+    "profilePhoto": "https://randomuser.me/api/portraits/men/5.jpg",
     "dob": "05/06/1989",
     "location": "NYC"
   }

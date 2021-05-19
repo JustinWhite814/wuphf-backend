@@ -10,6 +10,7 @@ const PostSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    // authon: {
     //   type: mongoose.Schema.Types.ObjectId,
     //   ref: "User",
     //   required: true
@@ -18,6 +19,7 @@ const PostSchema = new mongoose.Schema(
     //   type: mongoose.Schema.Types.ObjectId,
     //   ref: "User"
     // }],
+    likes: [String]
   },
   { timestamp: true }
 );

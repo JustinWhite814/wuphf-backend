@@ -2,9 +2,12 @@ const mongoose = require('../db/connection');
 
 const UserSchema = new mongoose.Schema(
   {
-    name: {
+    firstName: {
       type: String, 
       required: true
+    },
+    lastName: {
+      type: String, 
     },
     username: {
       type: String, 
@@ -14,10 +17,10 @@ const UserSchema = new mongoose.Schema(
     profilePhoto: String, 
     dob: String,
     location: String,
-    posts: [{
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'Post'
-    }], 
+    // posts: [{
+    //   type: mongoose.Schema.Types.ObjectId,
+    //   ref: 'Post'
+    // }], 
     bookmarks: [{type: String}],
   }, 
   {timestamp: true}
