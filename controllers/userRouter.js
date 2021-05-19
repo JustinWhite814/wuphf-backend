@@ -9,7 +9,7 @@ router.get("/", (req, res, next) => {
     .catch(next);
 });
 
-// Show: Get a User by ID
+// Show: Get a User by username
 router.get("/:username", (req, res, next) => {
   User.findOne({ username: req.params.username })
     // .populate("posts")
@@ -28,8 +28,8 @@ router.post("/", (req, res, next) => {
 });
 
 // Update: Update a User's information
-router.put("/:username", (req, res, next) => {
-  User.findOneAndUpdate({ username: req.params.username }, req.body, {
+router.put("/:id", (req, res, next) => {
+  User.findOneAndUpdate({ _id: req.params.id }, req.body, {
     new: true,
   })
     .then((result) => res.json(result))
