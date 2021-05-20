@@ -3,7 +3,7 @@
     "firstName": "Justin",
     "lastName": "White",
     "username": "KingOfStaten",
-    "password": "king.of(staten)",
+    "password": "staten",
     "profilePhoto": "https://randomuser.me/api/portraits/men/83.jpg",
     "dob": "07/13/1991",
     "location": "NYC"
@@ -12,7 +12,7 @@
     "firstName": "Max",
     "lastName": "Walker",
     "username": "MaximumDude",
-    "password": "!minimum1",
+    "password": "maximum1",
     "profilePhoto": "https://randomuser.me/api/portraits/men/38.jpg",
     "dob": "07/08/1993",
     "location": "New Jersey"
@@ -21,7 +21,7 @@
     "firstName": "Evan",
     "lastName": "Burton",
     "username": "EverManBurton",
-    "password": "em=burton",
+    "password": "blackhawks",
     "profilePhoto": "https://randomuser.me/api/portraits/men/77.jpg",
     "dob": "07/17/1991",
     "location": "Chicago"
@@ -30,7 +30,7 @@
     "firstName": "Raihan",
     "lastName": "Saleh",
     "username": "BrownHammer",
-    "password": "blackGlasses",
+    "password": "1",
     "profilePhoto": "https://randomuser.me/api/portraits/men/5.jpg",
     "dob": "05/06/1989",
     "location": "NYC"
