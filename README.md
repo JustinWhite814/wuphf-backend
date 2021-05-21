@@ -16,7 +16,7 @@ _WUPHF was created as a project 3 for General Assembly._
 
 ```
 Git clone [your https url goes here]
-cd [wuphf-backend]
+cd wuphf-backend
 npm i
 npm start
 ```
