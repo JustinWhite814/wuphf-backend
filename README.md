@@ -11,6 +11,7 @@ https://wuphf-database.herokuapp.com
 _WUPHF was created as a project 3 for General Assembly._
 
 ## Installation Instructions
+
 * First, fork and clone the repo
 * Next, `npm i` to install required packages 
 * Then lastly, open up the files in your code editor
