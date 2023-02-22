@@ -12,10 +12,6 @@ router.get("/", (req, res, next) => {
 // Show: Get a User by username
 router.get("/:username", (req, res, next) => {
   User.findOne({ username: req.params.username })
-    // .populate("posts")
-    // .exec((error, posts) => {
-    //   if (error) return console.log("Post population error");
-    // })
     .then((result) => res.json(result))
     .catch(next);
 });
